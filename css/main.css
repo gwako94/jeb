@@ -50,7 +50,7 @@ p {
 
 .section-title span {
     color: rgb(219, 14, 219);
-} 
+}
 
 
 /* Header section */
@@ -297,9 +297,9 @@ p {
     text-align: center;
 }
 
-#services .section-title span {
+/* #services .section-title span {
     color: rgb(219, 14, 219);
-}
+} */
 
 #services .service-bottom {
     display: flex;
