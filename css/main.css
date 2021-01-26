@@ -48,10 +48,9 @@ p {
     text-align: center;
 }
 
-.section-title span {
+/* .section-title span {
     color: rgb(219, 14, 219);
-}
-
+} */
 
 /* Header section */
 #header {
@@ -191,7 +190,7 @@ p {
 
 /* Hero section */
 #hero {
-    background-image: url("/images/hero.jpg");
+    background-image: url("https://res.cloudinary.com/dueojiwp5/image/upload/v1611662021/images/hero_uywv9t.jpg");
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -287,7 +286,7 @@ p {
     padding: 100px 0;
 }
 
-#services .section-title {
+/* #services .section-title {
     font-size: 4rem;
     font-weight: 300;
     color: #000000;
@@ -295,7 +294,7 @@ p {
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
-}
+} */
 
 /* #services .section-title span {
     color: rgb(219, 14, 219);
@@ -421,7 +420,7 @@ p {
 
 input[type=text], select, textarea {
 	width: 100%;
-	padding: 12px;
+	padding: 20px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
@@ -454,12 +453,21 @@ input[type=text], select, textarea {
 	padding-top: 50px;
 	padding-bottom: 10px;
 }
+
 #footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 2rem;
+	letter-spacing: .1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+} 
+
+#footer div {
 	color: white;
 	font-weight: 500;
 	font-size: 1.8rem;
 	letter-spacing: .1rem;
-	margin-top: 10px;
 	margin-bottom: 10px;
 }
 #footer .social-icon {
@@ -467,8 +475,8 @@ input[type=text], select, textarea {
 	margin-bottom: 30px;
 }
 #footer .social-item {
-	height: 50px;
-	width: 50px;
+	height: 100px;
+	width: 100px;
 	margin: 0 5px;
 }
 #footer .social-item img {
@@ -537,6 +545,49 @@ input[type=text], select, textarea {
 	}
 }
 /* End  Media Query For Desktop */
+
+
+/* Media Query for Mobile */
+
+@media only screen and (max-width: 600px) {
+	#hero h1 {
+		font-size: 1.8rem;
+	}
+
+	#header .hamburger {
+		float:right;
+	}
+
+	.section-title {
+		font-size: 3rem;
+	}
+
+	.service-top p {
+		font-size: 1.2rem;
+	}
+
+	#footer div {
+		font-size: 1.5rem !important;
+		text-align: center;
+	}
+
+	#footer p {
+		color: white;
+		font-size: 1.2rem !important;
+	}
+	
+}
+
+/* End Media query for mobile */
+
+/* Media Query for Tablet */
+@media (min-width: 600px) and (max-width: 1848px) {
+	#header .hamburger {
+		float:right;
+	}
+}
+
+/* End Media query for tablet */
 
 /* keyframes */
 @keyframes text_reveal_box {
